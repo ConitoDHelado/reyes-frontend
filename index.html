@@ -13,18 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- FONTS -->
+    <script type="module" src="scripts/login.js" defer></script>
 </head>
 <body>
     <div class="container">
     <h1 class="title">Lista de Reyes</h1>
     <img src="images/reyes_magos.webp">
     <form class="login"> 
-        <label>Usuario<input type="text" name="usuario" required></label>
-        <label>Contraseña<input type="password" name="contraseña" required></label>
+        <label>Usuario<input type="text" id="username" name="usuario" required></label>
+        <label>Contraseña<input type="password" id="password" name="contraseña" required></label>
     </form>
-    <button>Iniciar sesión</button>
+    
+    <button type="submit" id="loginBtn">Iniciar sesión</button>
 
-
+    <div id="authMessage"></div>
 </div>
 
 </body>
